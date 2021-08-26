@@ -10,6 +10,4 @@ function Login(props) {
   const [loading, setLoading] = useState(false);
  
   // handle button click of login form
-  const handleLogin = () => {
-    props.history.push('/dashboard');
-  }
+  const handleLogin = () =>
