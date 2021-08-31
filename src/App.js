@@ -8,7 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           <h1>Library Management System</h1>
-          <left><h2>Book Details</h2><h2>Member Details</h2></left>
+          <left><h2>Book </h2><h2>Member Details</h2></left>
         </p>
         <a
           className="App-link"
