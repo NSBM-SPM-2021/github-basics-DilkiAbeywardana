@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <h1>Library Management System</h1>
-          <left><h2>Book </h2><h2>Member Details</h2></left>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import './App.css';
+import NavBar from './Components/navigationbar';
+
+import Home from './Pages/Home';
+import Books from './Pages/Books';
+import Members from './Pages/Members';
+
+
+function App(){
+return(
+  <Router>
+    <NavBar/>
+    <Switch>
+        <Route path="/" exact component={Home}/>
+        <Route path="/Books" component={Books}/>
+        <Route path="/Members" component={Members}/>
+      </Switch>
+    </Router>
   );
 }
 
