@@ -1,9 +1,10 @@
 import React from 'react';
+
+import { useEffect } from 'react';
+
 import './Members.css';
 
 function Members() {
-
-
 
   return (
     
@@ -37,7 +38,6 @@ function Members() {
                 <br></br>
             <input type="submit" value="Submit" />
          </form>
-
       </header>
     </div>
   );
