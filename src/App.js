@@ -1,8 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-import db from './firebase';
-import { useEffect } from 'react';
 import './App.css';
 import NavBar from './Components/navigationbar';
 
@@ -21,7 +19,8 @@ return(
         <Route path="/Members" component={Members}/>
       </Switch>
     </Router>
-  );
+);
+
 }
 
 export default App;

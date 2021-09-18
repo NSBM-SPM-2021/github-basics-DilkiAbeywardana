@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 
 
+
 function Home() {
   
   return (
@@ -27,10 +28,10 @@ function Home() {
           </tr>
         </table>
              <i>Poya Days are Effect To Those Open Days & Times</i>
-             
-      </header>
-    </div>
+        </header>
+   </div>
   );
 }
 
-export default Home;
+
+export default Home;          
