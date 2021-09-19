@@ -11,7 +11,7 @@ function Home() {
       <header className="Home-header">
         
         <p>
-          <h1>WELLCOME TO LIBRARY MANAGEMENT SYSTEME</h1>
+          <h1>WELLCOME TO LIBRARY MANAGEMENT SYSTEM</h1>
               <h5><i>~ Vist The Library .. Borrow The Beauty .. Keep The Knowladge ~</i></h5>
                 <i>This Is Our Home Page </i>
         </p>
