@@ -57,7 +57,7 @@ const Form = () => {
         <br></br>
         <input type="submit" value="Submit" />
         </form>
-    )
-}
+    );
+};
 
 export default Form;
