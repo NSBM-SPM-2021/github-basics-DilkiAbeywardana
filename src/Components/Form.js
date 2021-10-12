@@ -55,7 +55,7 @@ const Form = () => {
         <lable>Email:</lable>
         <input placeholder="Email"value={Email} onChange={(e)=> setEmail(e.target.value)}/>
         <br></br>
-        <input type="submit" value="Submit" />
+        <button type="Submit">SUBMIT</button>
         </form>
     );
 };

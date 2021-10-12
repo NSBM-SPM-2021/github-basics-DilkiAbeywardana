@@ -1,7 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore/lite';
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyBTdU4_DYfVkgYK6sv1N7BIL682SmnirvI",
   authDomain: "library-management-syste-f12a5.firebaseapp.com",

@@ -23,7 +23,7 @@ function Home() {
             <td>Every Week Days</td>
           </tr>
           <tr>
-            <th>Open Times(Hourse)</th>
+            <th>Open Times(Hours)</th>
             <td>9.00 A.M - 5.00 P.M</td>
           </tr>
         </table>
