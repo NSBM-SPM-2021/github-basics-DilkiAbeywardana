@@ -2,6 +2,7 @@ import React, { useState,useEffect } from 'react';
 
 import { db } from '../firebase';
 import { initializeApp } from "firebase/app";
+import { collection, addDoc } from "firebase/firestore"; 
 
 const Form = () => {
     const [Member_ID, setMember_ID] = useState("");
@@ -12,30 +13,25 @@ const Form = () => {
     const [loader, setLoarder] = useState(false);
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        setLoarder(true);
-
-        db.collection('Members')
-        .add({
-            Member_ID:Member_ID,
-            Name:Name,
-            Phone_Number:Phone_Number,
-            Email:Email,
-        })
-        .then(()=>{
-            setLoarder(false);
-            alert('Member Has Been Added');
-        })
-        .catch(error => {
-            alert(error.message);
-            setLoarder(false);
-        });
-        
-        setMember_ID("");
-        setName("");
-        setPhone_Number("");
-        setEmail("");
-        
+      e.preventDefault();
+  
+      addDoc(collection(db, "Members"), {
+        Member_ID: Member_ID,
+        Name:Name,
+        Phone_Number: Phone_Number,
+        Email:Email,
+      })
+      .then(() => {
+        alert('New Member Has Been Added' );
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  
+      setMember_ID("");
+      setName("");
+      setPhone_Number("");
+      setEmail("");
     };
 
 
