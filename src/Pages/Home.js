@@ -13,7 +13,7 @@ function Home() {
         <p>
           <h1>WELLCOME TO LIBRARY MANAGEMENT SYSTEM</h1>
               <h5><i>~ Vist The Library .. Borrow The Beauty .. Keep The Knowladge ~</i></h5>
-                <i>This Is Our Home Page </i>
+                <i>This Is Our Home Page..</i>
         </p>
         
               <h5>Physically Open Days & Times(Hours)</h5>
