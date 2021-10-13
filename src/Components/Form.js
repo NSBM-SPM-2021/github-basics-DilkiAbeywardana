@@ -37,21 +37,21 @@ const Form = () => {
 
     return(
         <form className="form" onSubmit={ handleSubmit }>
-        <u><i>Member Adding Form</i></u>
-        <br></br>
-        <lable>Member_ID:</lable>
-        <input placeholder="Member_ID" value={Member_ID} onChange={(e)=> setMember_ID(e.target.value)}/>
-        <br></br>
-        <lable>Name:</lable>
-        <input placeholder="Name"value={Name} onChange={(e)=> setName(e.target.value)}/>
-        <br></br>
-        <lable>Phone_Number:</lable>
-        <input placeholder="Phone_Number"value={Phone_Number} onChange={(e)=> setPhone_Number(e.target.value)}/>
-        <br></br>
-        <lable>Email:</lable>
-        <input placeholder="Email"value={Email} onChange={(e)=> setEmail(e.target.value)}/>
-        <br></br>
-        <button type="Submit">SUBMIT</button>
+          <u><i>Member Adding Form</i></u>
+            <br></br>
+          <lable>Member_ID:</lable>
+          <input placeholder="Member_ID" value={Member_ID} onChange={(e)=> setMember_ID(e.target.value)}/>
+            <br></br>
+          <lable>Name:</lable>
+          <input placeholder="Name"value={Name} onChange={(e)=> setName(e.target.value)}/>
+            <br></br>
+          <lable>Phone_Number:</lable>
+          <input placeholder="Phone_Number"value={Phone_Number} onChange={(e)=> setPhone_Number(e.target.value)}/>
+            <br></br>
+          <lable>Email:</lable>
+          <input placeholder="Email"value={Email} onChange={(e)=> setEmail(e.target.value)}/>
+            <br></br>
+          <button type="Submit">SUBMIT</button>
         </form>
     );
 };
